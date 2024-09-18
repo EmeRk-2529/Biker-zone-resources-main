@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker Zone</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="images/others/extrabike.png">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                Bikeprimary:'#E76F51',
+                'card-des-color':'#6C6C6C'
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+       .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+
+      </style>
+</head>
+<body>
+    <header class="max-w-[1200px] m-auto">
+<section>
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a class="poppins-medium">Home</a></li>
+                
+                      <li><a class="poppins-medium">Shop</a></li>
+                      <li><a class="poppins-medium">News</a></li>
+                  <li><a class="poppins-medium">Contact</a></li>
+          
+              </div>
+              <a class="btn btn-ghost text-3xl">Bike Dekho</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="poppins-medium">Home</a></li>
+                
+        
+                      <li><a class="poppins-medium">Shop</a></li>
+                      <li><a class="poppins-medium">News</a></li>
+                  
+                <li><a class="poppins-medium">Contact</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <a class="btn bg-Bikeprimary text-white poppins-bold text-xl md:w-[160px] md:h-[83px]">Login</a>
+            </div>
+          </div>
+        </section>
+                                  <!-- Slider Section Start -->
+         <section>
+    <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+            <div class="hero bg-[#E76F511A]  ">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img
+                    src="images/slider/bike1.png"
+                    class=" rounded-lg " />
+                  <div>
+                    <h1 class=" text-4xl md:text-6xl lg:text-6xl poppins-bold text-black">Ride-on R15 <br> V4 with Smile</h1>
+                    <p class="py-6 poppins-light text-base">
+                      Amet minim mollit non deserunt ullamco <br>
+          est sit aliqua dolor do amet sint. Velit officia consequat<br> duis enim velit mollit.
+                    </p>
+                    <button class="btn  bg-Bikeprimary text-white w-[160px] h-[64px] rounded-[5px]poppins-semibold-italic text-xl">Purchase</button>
+                  </div>
+                </div>
+              </div>
+          
+          
+          
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="hero bg-[#E76F511A]  ">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <img
+                src="images/slider/bike2.png"
+                class=" rounded-lg " />
+              <div>
+                <h1 class=" text-4xl md:text-6xl lg:text-6xl poppins-bold text-black">Ride-on R15 <br> V4 with Smile</h1>
+                <p class="py-6 poppins-light text-base">
+                  Amet minim mollit non deserunt ullamco <br>
+      est sit aliqua dolor do amet sint. Velit officia consequat<br> duis enim velit mollit.
+                </p>
+                <button class="btn  bg-Bikeprimary text-white w-[160px] h-[64px] rounded-[5px]poppins-semibold-italic text-xl">Purchase</button>
+              </div>
+            </div>
+          </div>
+      
+      
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+            <div class="hero bg-[#E76F511A] h-full">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img
+                    src="images/slider/bike3.png"
+                    class=" rounded-lg " />
+                  <div>
+                    <h1 class=" text-4xl md:text-6xl lg:text-6xl poppins-bold text-black">Ride-on R15 <br> V4 with Smile</h1>
+                    <p class="py-6 poppins-light text-base">
+                      Amet minim mollit non deserunt ullamco <br>
+          est sit aliqua dolor do amet sint. Velit officia consequat<br> duis enim velit mollit.
+                    </p>
+                    <button class="btn  bg-Bikeprimary text-white w-[160px] h-[64px] rounded-[5px]poppins-semibold-italic text-xl">Purchase</button>
+                  </div>
+                </div>
+              </div>
+          
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+            <div class="hero bg-[#E76F511A] ">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img
+                    src="images/slider/bike4.png"
+                    class="rounded-lg " />
+                  <div>
+                    <h1 class=" text-4xl md:text-6xl lg:text-6xl poppins-bold text-black">Ride-on R15 <br> V4 with Smile</h1>
+                    <p class="py-6 poppins-light text-base">
+                      Amet minim mollit non deserunt ullamco <br>
+          est sit aliqua dolor do amet sint. Velit officia consequat<br> duis enim velit mollit.
+                    </p>
+                    <button class="btn  bg-Bikeprimary text-white w-[160px] h-[64px] rounded-[5px]poppins-semibold-italic text-xl">Purchase</button>
+                  </div>
+                </div>
+              </div>
+          
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </section> 
+    </header>
+
+
+    <main>
+
+      <section class="max-w-[1200px] m-auto mt-[80px] mb-[120px]">
+<div class="flex flex-col items-center mb-16">
+        <h1 class="poppins-semibold text-[48px]">Fetured Bikes In This Year</h1>
+        <h3 class="text-Bikeprimary poppins-semibold  stroke-red-600 ">Best bike collection </h3> 
+        <img src="images/icons/Vector 6.png " class="w-[85.5px] mt-4" >
+      </div>
+        
+        <div class="flex flex-col md:flex-row lg:flex-row justify-between">
+          <img src="images/others/feature-bike.png" class="">
+          <img src="images/others/feature-bike.png">
+          <img src="images/others/feature-bike.png">
+         
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+      
+      <section  class="max-w-[1200px] m-auto pb-10">
+        <h1 class="poppins-semibold text-[48px] text-center">Latest News</h1>
+        <div class="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-3 items-center gap-3">
+
+
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure class=" pt-10">
+              <img
+                src="images/others/latest1.png"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body ">
+              <h2 class="card-title poppins-semibold text-[28px]">Ducati XDIAVEL S-73</h2>
+              <p class=" text-base text-card-des-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p><br>
+              <div class="card-actions">
+                <button class="btn bg-Bikeprimary text-white w-[160px] h-[64px] rounded-[5px]poppins-semibold-italic text-base">Read More</button>
+              </div>
+            </div>
+          </div>
+
+
+<!-- First Card Finish -->
+<div class="card bg-base-100 w-96 shadow-xl">
+            <figure class=" pt-10">
+              <img
+                src="images/others/latest2.png"
+                class="rounded-xl " />
+            </figure>
+            <div class="card-body ">
+              <h2 class="card-title poppins-semibold text-[28px]">Ducati XDIAVEL S-73</h2>
+              <p class=" text-base text-card-des-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p><br>
+              <div class="card-actions">
+                <button class="btn border-Bikeprimary text-Bikeprimary bg-white w-[160px] h-[64px] rounded-[5px]poppins-semibold-italic text-base">Read More</button>
+              </div>
+            </div>
+          </div>
+<!-- Second Card Finish -->
+
+
+
+<div class="card bg-base-100 w-96 shadow-xl">
+  <figure class=" pt-10">
+    <img
+      src="images/others/latest3.png"
+      class="rounded-xl" />
+  </figure>
+  <div class="card-body ">
+    <h2 class="card-title poppins-semibold text-[28px]">Ducati XDIAVEL S-73</h2>
+    <p class=" text-base text-card-des-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p><br>
+    
+    <div class="card-actions">
+      <button class="btn border-Bikeprimary text-Bikeprimary bg-white w-[160px] h-[64px] rounded-[5px]poppins-semibold-italic text-base">Read More</button>
+    </div>
+  </div>
+</div>
+        </div>
+      </section>
+
+
+
+      <section class="max-w-[1100px] m-auto mt-12">
+        <h1 class="poppins-semibold text-[48px] text-center">Happy <span class="text-[#E76F51]">Clients says</span> </h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-[30px] pt-[30px] gap-5 ">
+<!-- User1 Start -->
+
+          <div class="card bg-base-100 border-solid border-[1px] border-[#DEDEDE]">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/others/user-1.png"
+                class=" w-[149px]" />
+            </figure>
+            <div class="card-body items-center text-center">
+             
+              <p class="poppins-regular text-[#6C6C6C] text-base leading-[26px] tracking-[0.2px]">Slate helps you see how <br>
+                many more days you need <br>
+                to work to reach your financial <br>
+                goal for the month and year.</p>
+                <div class="inline-flex gap-[5px]">
+                  <img src="images/icons/star-solid.svg" class="w-[20px]">
+                  <img src="images/icons/star-solid.svg" class="w-[20px]">
+                  <img src="images/icons/star-solid.svg" class="w-[20px]">
+                  <img src="images/icons/star-solid.svg" class="w-[20px]">
+                  <img src="images/icons/star-regular.svg" class="w-[20px]">
+                </div><br>
+                <p class="poppins-semibold text-sm text-[#23A6F0]">Regina Miles</p><br>
+                <h4 class="poppins-semibold text-sm text-black">Banker</h4>
+            </div>
+            
+            </div>
+
+
+<!-- User-2 Start -->
+<div class="card bg-base-100 border-solid border-[1px] border-[#DEDEDE]">
+  <figure class="px-10 pt-10">
+    <img
+      src="images/others/user-2.png"
+      class=" w-[149px]" />
+  </figure>
+  <div class="card-body items-center text-center">
+   
+    <p class="poppins-regular text-[#6C6C6C] text-base leading-[26px] tracking-[0.2px]">Slate helps you see how <br>
+      many more days you need <br>
+      to work to reach your financial <br>
+      goal for the month and year.</p>
+      <div class="inline-flex gap-[5px]">
+        <img src="images/icons/star-solid.svg" class="w-[20px]">
+        <img src="images/icons/star-solid.svg" class="w-[20px]">
+        <img src="images/icons/star-solid.svg" class="w-[20px]">
+        <img src="images/icons/star-solid.svg" class="w-[20px]">
+        <img src="images/icons/star-regular.svg" class="w-[20px]">
+      </div><br>
+      <p class="poppins-semibold text-sm text-[#23A6F0]">Regina Miles</p><br>
+      <h4 class="poppins-semibold text-sm text-black">Banker</h4>
+  </div>
+  
+  </div>
+
+
+<!-- User-3 Start -->
+<div class="card bg-base-100 border-solid border-[1px] border-[#DEDEDE]">
+  <figure class="px-10 pt-10">
+    <img
+      src="images/others/user-3.png"
+      class=" w-[149px]" />
+  </figure>
+  <div class="card-body items-center text-center">
+   
+    <p class="poppins-regular text-[#6C6C6C] text-base leading-[26px] tracking-[0.2px]">Slate helps you see how <br>
+      many more days you need <br>
+      to work to reach your financial <br>
+      goal for the month and year.</p>
+      <div class="inline-flex gap-[5px]">
+        <img src="images/icons/star-solid.svg" class="w-[20px]">
+        <img src="images/icons/star-solid.svg" class="w-[20px]">
+        <img src="images/icons/star-solid.svg" class="w-[20px]">
+        <img src="images/icons/star-solid.svg" class="w-[20px]">
+        <img src="images/icons/star-regular.svg" class="w-[20px]">
+      </div><br>
+      <p class="poppins-semibold text-sm text-[#23A6F0]">Regina Miles</p><br>
+      <h4 class="poppins-semibold text-sm text-black">Banker</h4>
+  </div>
+  
+  </div>
+
+
+
+
+
+
+
+
+        
+
+
+
+</div>
+
+
+
+
+      </section>
+    </main>
+
+
+
+    <footer>
+      
+
+
+
+
+
+      <section class="max-w-[1200px] m-auto mt-14">
+        <h1 class="poppins-semibold text-[48px] text-center mb-14">Frequently Asked  <span class="text-[#E76F51]  ">Questions</span> </h1>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5 ">
+
+<div><img src="images/others/faq.png" class=" md:relative md:-bottom-40"></div>
+
+
+  <div class="grid grid-cols-1 gap-[20px] md:w-[552px] ">
+<!-- First Accordian Start -->
+
+        
+<div class="collapse collapse-arrow bg-base-100 rounded-[5px] border-solid border-[1px] border-[#D5E5FB]">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium text-[#383838]">What are the most important things I should
+            know about riding a bike?</div>
+          <div class="collapse-content">
+
+
+
+            
+            
+            
+            <p class="text-[#7E848C] md:`w-[450px]">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+          </div>
+        </div>
+ <!-- Second Accordian Start  -->
+
+ <div class="collapse collapse-arrow bg-base-100 rounded-[5px] border-solid border-[1px] border-[#D5E5FB]">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">How can I tell if my helmet is old and I need a 
+            new one?</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+
+         <!-- Third Accordian Start -->
+
+
+         <div class="collapse collapse-arrow bg-base-100 rounded-[5px] border-solid border-[1px] border-[#D5E5FB]">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">My bike has been in storage is it safe to ride?</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+
+<!-- Forth Accordian Start -->
+
+<div class="collapse collapse-arrow bg-base-100 rounded-[5px] border-solid border-[1px] border-[#D5E5FB]">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">What rules should I follow when riding my bike?</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+      <section class="md:mt-[163px] lg:mt-[163px] bg-black text-base-content rounded p-10">
+
+        
+<div class="grid grid-cols-1 md:grid-cols-2 md:-ml-[8rem] lg:ml-[8rem] ">
+
+
+        <div class="footer footer-center md:place-items-start lg:place-items-start" >
+
+          <nav class="grid grid-flow-col gap-4">
+            <a class="link link-hover text-white">Download Now</a>
+            <a class="link link-hover text-white">License</a>
+          </nav>
+
+          <nav class="grid grid-cols-3 md:grid-flow-col lg:grid-flow-col gap-4">
+            <a class="link link-hover text-white">About</a>
+            <a class="link link-hover text-white">Features</a>
+            <a class="link link-hover text-white">Pricing</a>
+            <a class="link link-hover text-white">Careers</a>
+            <a class="link link-hover text-white">Help</a>
+            <a class="link link-hover text-white">Privacy Policy</a>
+          </nav>
+          
+          <aside>
+            <p class="text-white">© 2020 bike. All rights reserved</p>
+          </aside>
+        </div>
+
+
+
+        <div class="md:ml-[170px] lg:ml-[170px] ">
+        
+          <nav>
+            <div class="grid grid-cols-1 gap-4  place-items-center">
+              <a>
+                <p class="text-white">Get the App</p>
+              </a>
+              <a>
+                <img
+                  src="images/others/ios.png"
+                  width="135"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  class="fill-current">
+                 
+                </img>
+              </a>
+              <a>
+                <img
+                 
+                src="images/others/android.png"
+                width="135"
+                height="40"
+                  viewBox="0 0 24 24"
+                  class="fill-current">
+                 
+                </img>
+              </a>
+             
+            </div>
+          </nav> 
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+      </section>
+    </footer>
+</body>
+</html>
